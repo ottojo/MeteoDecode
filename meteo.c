@@ -9,7 +9,7 @@
  */
 
 #include "meteo.h"
-#include "secrets.h"
+#include "MeteoSecrets/secrets.h"
 
 /**
  * Splits 40 bit time data and stores into timeH and timeL
