@@ -1,0 +1,3 @@
+[submodule "MeteoSecrets"]
+	path = MeteoSecrets
+	url = git@github.com:ottojo/MeteoSecrets.git
