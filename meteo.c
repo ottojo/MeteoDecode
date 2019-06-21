@@ -225,6 +225,9 @@ uint32_t checksum(const uint8_t plainBytes[5]) {
 /**
  * Decrypt DCF77 weather data.
  * Input data is collected over three minutes.
+ * The byte order is big endian, bit order is little endian.
+ * For reference: The input 00101000100111001101110000011100111000000000010100000000000101101110011000011001
+ * should be passed to this function as {40, 156, 220, 28, 224, 5, 0, 22, 230, 25}
  * @param 40 bits of weather data (3 packets of size 14, without the first and 8th bit received),
  *        then Minute, Hour, Day, Month, Day of Week, Year in BCD (as received)
  * @return 24 bits of decoded weather data
